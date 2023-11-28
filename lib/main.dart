@@ -25,12 +25,30 @@ class _InicioState extends State<Inicio> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text("workout!"),
-      ),
-      body: const Center(
-        child: Text("Contenido"),
-      ),
-    );
+        appBar: AppBar(
+          title: const Text("workout!"),
+        ),
+        body: ListView(children: <Widget>[
+          Container(
+            padding: EdgeInsets.all(20.0),
+            child: Image.network(
+                "https://i.ytimg.com/vi/VyhkfVHwXv8/hqdefault.jpg"),
+          ),
+          Container(
+            padding: EdgeInsets.all(20.0),
+            child: Image.network(
+                "https://i.ytimg.com/vi/VyhkfVHwXv8/hqdefault.jpg"),
+          ),
+          Container(
+            padding: EdgeInsets.all(20.0),
+            child: Image.network(
+                "https://i.ytimg.com/vi/VyhkfVHwXv8/hqdefault.jpg"),
+          ),
+          Container(
+            padding: EdgeInsets.all(20.0),
+            child: Image.network(
+                "https://i.ytimg.com/vi/VyhkfVHwXv8/hqdefault.jpg"),
+          ),
+        ]));
   }
 }
