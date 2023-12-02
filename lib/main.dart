@@ -25,12 +25,24 @@ class _InicioState extends State<Inicio> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: const Text("workout!"),
+      appBar: AppBar(
+        title: const Text("workout!"),
+      ),
+      body: Center(
+        child: ElevatedButton(
+          onPressed: () {
+            var t = DateTime.now();
+            print(t);
+          },
+          child: Column(mainAxisSize: MainAxisSize.min, children: <Widget>[
+            Icon(Icons.access_time),
+            SizedBox(
+              height: 7,
+            ),
+            Text("Now")
+          ]),
         ),
-        body: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            mainAxisSize: MainAxisSize.max,
-            children: <Widget>[Text("Hola 01"), Text("Hola 02")]));
+      ),
+    );
   }
 }
