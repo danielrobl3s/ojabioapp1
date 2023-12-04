@@ -1,5 +1,6 @@
 import 'package:app1_octavio/pages/paginaHome.dart';
 import 'package:app1_octavio/pages/paginaUsers.dart';
+import 'package:app1_octavio/pages/stairs.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(Myapp());
@@ -14,7 +15,7 @@ class Myapp extends StatefulWidget {
 class _MyappState extends State<Myapp> {
   int _paginaActual = 0;
 
-  List<Widget> _paginas = [paginaHome(), paginaUsers()];
+  List<Widget> _paginas = [paginaHome(), stairs(), paginaUsers()];
 
   @override
   Widget build(BuildContext context) {
@@ -24,6 +25,7 @@ class _MyappState extends State<Myapp> {
       home: Scaffold(
         body: _paginas[_paginaActual],
         bottomNavigationBar: BottomNavigationBar(
+          fixedColor: Color.fromRGBO(253, 133, 16, 1),
           onTap: (index) {
             setState(() {
               _paginaActual = index;
@@ -31,9 +33,10 @@ class _MyappState extends State<Myapp> {
           },
           currentIndex: _paginaActual,
           items: [
-            BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
+            BottomNavigationBarItem(icon: Icon(Icons.stairs), label: ""),
+            BottomNavigationBarItem(icon: Icon(Icons.home), label: ""),
             BottomNavigationBarItem(
-                icon: Icon(Icons.supervised_user_circle), label: "Users")
+                icon: Icon(Icons.supervised_user_circle), label: ""),
           ],
         ),
       ),
