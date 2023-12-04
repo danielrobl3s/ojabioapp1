@@ -6,12 +6,12 @@ class body extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      color: Color.fromARGB(255, 246, 246, 245),
       child: Align(
         alignment: AlignmentDirectional(0, 0.4),
         child: Row(
           mainAxisSize: MainAxisSize.max,
           mainAxisAlignment: MainAxisAlignment.spaceAround,
-          crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
             Container(
                 color: Color.fromARGB(255, 246, 246, 245),
