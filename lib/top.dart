@@ -8,7 +8,7 @@ class top extends StatelessWidget {
     return Container(
         height: 300,
         decoration: BoxDecoration(
-            color: Color.fromRGBO(253, 133, 16, 1),
+            color: Color.fromARGB(255, 254, 104, 11),
             borderRadius: BorderRadius.only(
                 bottomRight: Radius.elliptical(280, 280),
                 bottomLeft: Radius.elliptical(280, 280))));
@@ -22,6 +22,22 @@ class subtop extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
         height: 350,
+        decoration: BoxDecoration(
+          color: Color.fromARGB(255, 254, 253, 253),
+          borderRadius: BorderRadius.only(
+              bottomRight: Radius.elliptical(550, 260),
+              bottomLeft: Radius.elliptical(550, 260)),
+        ));
+  }
+}
+
+class modified_subtop extends StatelessWidget {
+  const modified_subtop({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+        height: 250,
         decoration: BoxDecoration(
           color: Color.fromARGB(255, 254, 253, 253),
           borderRadius: BorderRadius.only(

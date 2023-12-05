@@ -56,7 +56,7 @@ class card extends StatelessWidget {
               alignment: AlignmentDirectional(-0.9, 0.8),
               child: Icon(
                 Icons.donut_large_outlined,
-                color: Colors.orange,
+                color: Color.fromARGB(255, 254, 104, 11),
               ),
             ),
             SizedBox(
@@ -209,14 +209,16 @@ class contents extends StatelessWidget {
           alignment: AlignmentDirectional(0.7, 0.06),
           child: Text(
             "Open list >",
-            style: TextStyle(color: Colors.orange, fontSize: 16),
+            style: TextStyle(
+                color: Color.fromARGB(255, 254, 104, 11), fontSize: 16),
           ),
         ),
         Align(
           alignment: AlignmentDirectional(0.7, 0.6),
           child: Text(
             "See details >",
-            style: TextStyle(color: Colors.orange, fontSize: 16),
+            style: TextStyle(
+                color: Color.fromARGB(255, 254, 104, 11), fontSize: 16),
           ),
         ),
       ],

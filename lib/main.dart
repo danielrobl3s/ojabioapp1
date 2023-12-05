@@ -25,7 +25,7 @@ class _MyappState extends State<Myapp> {
       home: Scaffold(
         body: _paginas[_paginaActual],
         bottomNavigationBar: BottomNavigationBar(
-          fixedColor: Color.fromRGBO(253, 133, 16, 1),
+          fixedColor: Color.fromARGB(255, 254, 104, 11),
           onTap: (index) {
             setState(() {
               _paginaActual = index;
