@@ -16,3 +16,16 @@ Future<List> getUsers() async {
 
   return users;
 }
+
+Future<List> getImages() async {
+  List images = [];
+  CollectionReference collectionReferenceImages = db.collection('images');
+
+  QuerySnapshot queryImages = await collectionReferenceImages.get();
+
+  queryImages.docs.forEach((documento) {
+    images.add(documento.data());
+  });
+
+  return images;
+}
