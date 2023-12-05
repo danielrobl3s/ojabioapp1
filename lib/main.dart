@@ -34,7 +34,7 @@ class _MyappState extends State<Myapp> {
           currentIndex: _paginaActual,
           items: [
             BottomNavigationBarItem(icon: Icon(Icons.stairs), label: ""),
-            BottomNavigationBarItem(icon: Icon(Icons.home), label: ""),
+            BottomNavigationBarItem(icon: Icon(Icons.donut_small), label: ""),
             BottomNavigationBarItem(
                 icon: Icon(Icons.supervised_user_circle), label: ""),
           ],
