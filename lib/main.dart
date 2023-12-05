@@ -3,7 +3,17 @@ import 'package:app1_octavio/pages/paginaUsers.dart';
 import 'package:app1_octavio/pages/stairs.dart';
 import 'package:flutter/material.dart';
 
-void main() => runApp(Myapp());
+//importaciones de firebase
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
+  runApp(Myapp());
+}
 
 class Myapp extends StatefulWidget {
   const Myapp({super.key});
