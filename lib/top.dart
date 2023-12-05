@@ -63,6 +63,22 @@ class cover extends StatelessWidget {
   }
 }
 
+class modifiedCover extends StatelessWidget {
+  const modifiedCover({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      height: 200,
+      decoration: BoxDecoration(
+          color: Color.fromARGB(255, 35, 35, 35),
+          borderRadius: BorderRadius.only(
+              bottomLeft: Radius.elliptical(150, 100),
+              bottomRight: Radius.elliptical(150, 100))),
+    );
+  }
+}
+
 class cover2 extends StatelessWidget {
   const cover2({super.key});
 
