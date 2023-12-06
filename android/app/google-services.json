@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "706851265772",
+    "project_id": "flutter-app1-15b84",
+    "storage_bucket": "flutter-app1-15b84.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:706851265772:android:01316c12eb1484294519c9",
+        "android_client_info": {
+          "package_name": "com.example.app1_octavio"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDF6jeufbnn5A-p65LlmWy8L4LXx8ID2qA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
